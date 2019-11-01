@@ -9,7 +9,7 @@ docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=SA12#45678" -p 1433:1433 --name sq
 
 # STEP 2
 # Copy backup file
-unzip ./EDM_Test_Orig.bak.zip
+unzip -o ./EDM_Test_Orig.bak.zip
 docker exec -it sql1 mkdir /var/opt/mssql/backup
 docker cp ./EDM_Test_Orig.bak sql1:/var/opt/mssql/backup
 rm -f ./EDM_Test_Orig.bak
