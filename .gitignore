@@ -1,0 +1,5 @@
+__MACOSX
+*_copy.sh
+*.log
+upload-config.json
+*EDM_Test_Orig.bak
