@@ -8,4 +8,5 @@ Simple automated EDM based workflows for RMS Risk Intelligence - Risk Modeler 2.
 - java: Java or OpenJRE/OpenJDK 8 installed locally. 
 
 ## Getting Started
-- EDM_Local_Access
+- EDM-Local-Access: use docker and a local EDM to explore the exposures and run local queries. 
+- EDM-RiskModeler-Import: use Risk Intelligence APIs to upload EDM to Risk Modeler 2.0 or later. 
