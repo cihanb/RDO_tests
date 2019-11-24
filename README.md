@@ -10,3 +10,5 @@ Simple automated EDM based workflows for RMS Risk Intelligence - Risk Modeler 2.
 ## Getting Started
 - EDM-Local-Access: use docker and a local EDM to explore the exposures and run local queries. 
 - EDM-RiskModeler-Import: use Risk Intelligence APIs to upload EDM to Risk Modeler 2.0 or later. 
+
+Note: ```These samples works with RiskIntelligence Preview release and the final version of the product may require different steps to upload EDMs```
