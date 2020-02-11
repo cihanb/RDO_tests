@@ -26,7 +26,7 @@
 # Author: Cihan Biyikoglu - github:(cihanb)
 
 ##sql settings
-sql_container_tag="mcr.microsoft.com/mssql/server:2019-CTP3.0-ubuntu"
+sql_container_tag="mcr.microsoft.com/mssql/server:2017-latest"
 sa_password="sa_password"
 
 #riskmodeler settings
