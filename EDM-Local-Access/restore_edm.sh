@@ -26,7 +26,7 @@
 # Author: Cihan Biyikoglu - github:(cihanb)
 
 #read settings
-source ../settings.sh
+source ../settings_copy.sh
 
 # STEP 1
 # Start the docker container
@@ -46,4 +46,7 @@ rm -f ./EDM_Test_Orig.bak
 # RMS_EDM_YYTest_log D:\AttachedDatabases\RMS_EDM_YYTest_log.LDF
 
 # STEP 3
+#Wait for sql startup 
+sleep 5s
+#restore edm db
 docker exec -it sql1 /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "$sa_password" -Q 'RESTORE DATABASE db1 FROM DISK = "/var/opt/mssql/backup/EDM_Test_Orig.bak" with REPLACE, MOVE "RMS_EDM_YYTest" to "/var/opt/mssql/RMS_EDM_YYTest.mdf", MOVE "RMS_EDM_YYTest_log" to "/var/opt/mssql/RMS_EDM_YYTest.ldf"'
